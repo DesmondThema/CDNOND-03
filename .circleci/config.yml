@@ -216,7 +216,7 @@ jobs:
         - at: ~/
       - run: 
         name: Configure server
-        command |
+        command: |
           cd .circleci/ansible
           cat inventory.text
           ansible-playbook -i inventory.text configure-server.yml
