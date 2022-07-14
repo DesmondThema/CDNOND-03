@@ -290,10 +290,10 @@ jobs:
     docker:
       - image: cimg/base:stable
     steps:
-      - checkout:
+      - checkout
       - install_awscli
       - install_ansible
-      - install_ndejs
+      - install_nodejs
       - add_ssh_keys:
           fingerprints: ["8c:b5:5c:1c:06:ea:e4:15:4d:dd:71:c9:28:eb:d5:4a"]
       - attach_workspace:
