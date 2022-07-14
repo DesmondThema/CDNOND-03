@@ -257,7 +257,7 @@ jobs:
     docker:
       - image: cimg/base:stable
     steps:
-      - checkout:
+      - checkout
       - install_awscli
       - install nodejs
       - restore_cache:
